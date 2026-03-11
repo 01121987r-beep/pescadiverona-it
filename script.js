@@ -1,7 +1,7 @@
-const articles = window.MATC_ARTICLES || [];
+const articles = window.PDV_ARTICLES || [];
 const currentYear = new Date().getFullYear();
 const isEnglish = document.documentElement.lang === 'en';
-const cookieKey = 'mammeandthecity_cookie_consent_v1';
+const cookieKey = 'pescadiverona_cookie_consent_v1';
 
 const formatDate = (value) => {
   const date = new Date(value);
@@ -206,7 +206,7 @@ const createCookieBanner = () => {
   banner.innerHTML = `
     <div class="cookie-panel">
       <span class="cookie-topline">Cookie essenziali</span>
-      <p class="cookie-copy">Usiamo cookie tecnici per rendere il magazine stabile, veloce e coerente anche su mobile. Maggiori dettagli in <a href="privacy.html">Privacy Policy</a> e <a href="cookie.html">Cookie Policy</a>.</p>
+      <p class="cookie-copy">Usiamo cookie tecnici per rendere il magazine stabile, veloce e coerente anche su mobile. Dettagli completi in <a href="privacy.html">Privacy Policy</a> e <a href="cookie.html">Cookie Policy</a>.</p>
       <div class="cookie-actions">
         <button class="btn btn-outline" type="button" data-cookie="reject">Rifiuta</button>
         <button class="btn btn-primary" type="button" data-cookie="accept">Accetta</button>

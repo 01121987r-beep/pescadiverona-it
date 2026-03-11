@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://01121987r-beep.github.io/mammeandthecity/sitemap.xml
+Sitemap: https://01121987r-beep.github.io/pescadiverona-it/sitemap.xml
