@@ -7,8 +7,8 @@ window.PDV_ARTICLES = [
     "author": "Marco Lazzari",
     "readingTime": "7 min",
     "excerpt": "Spot, artificiali e finestre orarie per affrontare con piu metodo una delle tecniche piu praticate nel veronese.",
-    "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=1200&h=800&q=80",
-    "alt": "Pescatore sportivo lungo il fiume in luce del mattino",
+    "image": "https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1200&h=800&q=80",
+    "alt": "Pescatore con canna lungo uno specchio d acqua in giornata nuvolosa",
     "url": "articolo-spinning-adige-persa-reale-primavera.html",
     "featured": true,
     "popular": true,
@@ -41,8 +41,8 @@ window.PDV_ARTICLES = [
         "figure",
         [
           "https://images.unsplash.com/photo-1509316785289-025f5b846b35?auto=format&fit=crop&w=1200&h=800&q=80",
-          "Dettaglio di canneto e rientro di corrente sul fiume",
-          "Le zone di corrente spezzata restano tra i riferimenti piu interessanti nel periodo primaverile."
+          "Canale fluviale con vegetazione riparia e corrente lenta in luce primaverile",
+          "Le zone di corrente spezzata e i margini piu tranquilli restano tra i riferimenti piu interessanti nel periodo primaverile."
         ]
       ],
       [

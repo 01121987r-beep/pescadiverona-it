@@ -2,6 +2,7 @@ const articles = window.PDV_ARTICLES || [];
 const currentYear = new Date().getFullYear();
 const isEnglish = document.documentElement.lang === 'en';
 const cookieKey = 'pescadiverona_cookie_consent_v1';
+const contactEmail = 'futuraweb26@gmail.com';
 
 const formatDate = (value) => {
   const date = new Date(value);
@@ -156,7 +157,32 @@ const setupForms = () => {
         if (feedback) feedback.textContent = 'Compila i campi richiesti e conferma la privacy.';
         return;
       }
-      if (feedback) feedback.textContent = 'Richiesta inviata correttamente. Ti risponderemo al più presto.';
+
+      const data = new FormData(form);
+      const isNewsletter = form.classList.contains('newsletter-form');
+      const subject = isNewsletter
+        ? 'Iscrizione newsletter PescaDiVerona'
+        : `Richiesta contatto PescaDiVerona - ${data.get('name') || 'Nuovo messaggio'}`;
+
+      const body = isNewsletter
+        ? [
+            'Richiesta di iscrizione newsletter',
+            '',
+            `Email: ${data.get('email') || ''}`
+          ].join('\n')
+        : [
+            'Nuovo messaggio dal form contatti di PescaDiVerona',
+            '',
+            `Nome: ${data.get('name') || ''}`,
+            `Email: ${data.get('email') || ''}`,
+            '',
+            'Messaggio:',
+            `${data.get('message') || ''}`
+          ].join('\n');
+
+      window.location.href = `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      if (feedback) feedback.textContent = 'Si apre la tua app email con il messaggio precompilato.';
       form.reset();
     });
   });
